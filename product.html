@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product - ShopHub</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container">
+      <div class="navbar-content">
+        <h1 class="logo">ShopHub</h1>
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="shop.html" class="nav-link">Shop</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+          <li><a href="cart.html" class="nav-link cart-link">Cart (0)</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Product Detail -->
+  <div class="container product-detail">
+    <div class="product-images">
+      <img src="/placeholder.svg?height=400&width=400" alt="Wireless Headphones">
+    </div>
+    <div class="product-info">
+      <h2>Wireless Headphones</h2>
+      <p class="rating">⭐⭐⭐⭐⭐ (128 reviews)</p>
+      <p class="price-large">$79.99</p>
+      
+      <div class="product-details">
+        <h3>Description</h3>
+        <p>Premium wireless headphones with noise cancellation, 30-hour battery life, and crystal clear sound quality.</p>
+        
+        <h3>Features</h3>
+        <ul>
+          <li>Active Noise Cancellation</li>
+          <li>30-Hour Battery Life</li>
+          <li>Bluetooth 5.0 Connectivity</li>
+          <li>Built-in Microphone</li>
+          <li>Premium Materials</li>
+        </ul>
+        
+        <h3>Quantity</h3>
+        <div class="quantity-selector">
+          <button onclick="decreaseQty()">-</button>
+          <input type="number" id="quantity" value="1" min="1">
+          <button onclick="increaseQty()">+</button>
+        </div>
+        
+        <button class="btn btn-primary" onclick="addToCart('Wireless Headphones', 79.99)">Add to Cart</button>
+        <button class="btn btn-outline">❤️ Add to Favorites</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Related Products -->
+  <section class="related-section">
+    <div class="container">
+      <h3>Related Products</h3>
+      <div class="products-grid">
+        <div class="product-card">
+          <img src="/placeholder.svg?height=250&width=250" alt="Portable Speaker">
+          <h3>Portable Speaker</h3>
+          <p class="price">$49.99</p>
+          <a href="product.html" class="btn btn-outline">View Details</a>
+        </div>
+        <div class="product-card">
+          <img src="/placeholder.svg?height=250&width=250" alt="USB-C Cable">
+          <h3>USB-C Cable (2m)</h3>
+          <p class="price">$12.99</p>
+          <a href="product.html" class="btn btn-outline">View Details</a>
+        </div>
+        <div class="product-card">
+          <img src="/placeholder.svg?height=250&width=250" alt="Phone Case">
+          <h3>Premium Phone Case</h3>
+          <p class="price">$24.99</p>
+          <a href="product.html" class="btn btn-outline">View Details</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 ShopHub. All rights reserved.</p>
+      <ul class="footer-links">
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="#">Privacy</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

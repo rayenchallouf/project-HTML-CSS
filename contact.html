@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - ShopHub</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container">
+      <div class="navbar-content">
+        <h1 class="logo">ShopHub</h1>
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="shop.html" class="nav-link">Shop</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="contact.html" class="nav-link active">Contact</a></li>
+          <li><a href="cart.html" class="nav-link cart-link">Cart (0)</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Contact Section -->
+  <div class="container contact-container">
+    <h2>Contact Us</h2>
+    
+    <div class="contact-layout">
+      <div class="contact-form">
+        <h3>Get in Touch</h3>
+        <form onsubmit="handleSubmit(event)">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" required>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+      </div>
+
+      <div class="contact-info">
+        <h3>Contact Information</h3>
+        <div class="info-item">
+          <h4>Email</h4>
+          <p><a href="mailto:info@shophub.com">info@shophub.com</a></p>
+        </div>
+        <div class="info-item">
+          <h4>Phone</h4>
+          <p>1-800-SHOPHUB</p>
+        </div>
+        <div class="info-item">
+          <h4>Address</h4>
+          <p>123 Main Street<br>New York, NY 10001</p>
+        </div>
+
+        <h3>FAQ</h3>
+        <div class="faq-item">
+          <h4>What is your return policy?</h4>
+          <p>We offer a 30-day return policy on all products.</p>
+        </div>
+        <div class="faq-item">
+          <h4>How long does shipping take?</h4>
+          <p>Standard shipping takes 5-7 business days.</p>
+        </div>
+        <div class="faq-item">
+          <h4>Do you offer international shipping?</h4>
+          <p>Yes, we ship to most countries worldwide.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 ShopHub. All rights reserved.</p>
+      <ul class="footer-links">
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="#">Privacy</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
